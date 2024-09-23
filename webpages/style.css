@@ -1,0 +1,49 @@
+.one
+{
+	width: 28%;
+	float: left;
+	margin: 20px;
+	padding: 15px;
+    border: solid 6px;
+    border-radius: 6%;
+}
+
+.two
+{
+	width: 28%;
+	float: left;
+	margin: 20px;
+	padding: 15px;
+    border: solid 6px;
+    border-radius: 6%;
+}
+
+.three
+{
+	width: 28%;
+	float: left;
+	margin: 20px;
+	padding: 15px;
+    border: solid 6px;
+    border-radius: 6%;
+}
+
+.top-img
+{
+	border-radius: 5%;
+}
+h5,p
+{
+	color: #4B5563;
+	line-height: 1.5;
+}
+.av-img
+{
+	border-radius: 50%;
+}
+
+.av-name
+{
+	margin-left: 75px;
+	margin-top:-35px;
+}
