@@ -335,36 +335,36 @@
 #         return n * factorial(n-1)
 # print(factorial(10))
 
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+# import smtplib
+# from email.mime.text import MIMEText
+# from email.mime.multipart import MIMEMultipart
 
-sender_email = "shashankmanjula2003@gmail.com"
-receiver_email = "gsd99689@gmail.com"
-# password = "$hashank@"
-password = "itgoewspabgjlasz"
-subject = "Test Email"
-body = "This is a test email sent from Python"
+# sender_email = "shashankmanjula2003@gmail.com"
+# receiver_email = "gsd99689@gmail.com"
+# # password = "$hashank@"
+# password = "itgoewspabgjlasz"
+# subject = "Test Email"
+# body = "This is a test email sent from Python"
 
-message = MIMEMultipart()
-message["From"] = sender_email
-message["To"] = receiver_email
-message["Subject"] = subject
-#Attach the body with msg instance
-message.attach(MIMEText(body,"plain"))
+# message = MIMEMultipart()
+# message["From"] = sender_email
+# message["To"] = receiver_email
+# message["Subject"] = subject
+# #Attach the body with msg instance
+# message.attach(MIMEText(body,"plain"))
 
-#step3-Setup the SMTP server
-smtp_server = "smtp.gmail.com"
-port = 587
-try:
-    server = smtplib.SMTP(smtp_server,port)
-    server.starttls() #secure the connection
-    #login to the email account
-    server.login(sender_email,password)
-    #send the mail
-    server.sendmail(sender_email, receiver_email, message.as_string())
-    print("Email successfully sent")
-except Exception as e:
-    print(f"error: {e}")
-finally:
-    server.quit() #close the connection
+# #step3-Setup the SMTP server
+# smtp_server = "smtp.gmail.com"
+# port = 587
+# try:
+#     server = smtplib.SMTP(smtp_server,port)
+#     server.starttls() #secure the connection
+#     #login to the email account
+#     server.login(sender_email,password)
+#     #send the mail
+#     server.sendmail(sender_email, receiver_email, message.as_string())
+#     print("Email successfully sent")
+# except Exception as e:
+#     print(f"error: {e}")
+# finally:
+#     server.quit() #close the connection
